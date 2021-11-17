@@ -73,3 +73,6 @@
 
 #%include /etc/torrc.d/*.conf
 
+User tor
+
+
