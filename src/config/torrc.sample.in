@@ -1,10 +1,9 @@
 Log notice syslog
-
 DataDirectory @LOCALSTATEDIR@/lib/tor
 
 User tor
-SocksPort 192.168.1.1:9150
-Socks5Proxy 192.168.1.1:1090
+SocksPort 0.0.0.0:9150
+HttpsProxy 127.0.0.1:3090
 GeoIPFile /usr/share/tor/geoip
 GeoIPv6File /usr/share/tor/geoip6
 GeoIPExcludeUnknown 1
@@ -12,6 +11,3 @@ ExcludeNodes {cn},{hk},{mo},{sg},{th},{pk},{by},{ru},{ir},{vn},{ph},{my},{cu},{c
 ExcludeExitNodes {cn},{hk},{mo},{sg},{th},{pk},{by},{ru},{ir},{vn},{ph},{my},{cu},{cl},{ci},{cr},{ee},{es},{gr},{il},{kz},{kw},{lk},{lt},{lv},{kp},{sy},{cu},{tw},{st},{ve},{eg},{kh},{la},{mm},{tr},{ua},{ye},{tk},{br},{pa},{lu},{do},{bf},{in},{id},{sv},{va},{??}
 
 StrictNodes 1
-StrictExitNodes 1
-ExitNodes {us}{de}
-
